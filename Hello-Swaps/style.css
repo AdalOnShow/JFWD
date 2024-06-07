@@ -1,0 +1,853 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+  --whiteColor: #ffffff;
+  --darkColor: #000000;
+  --greyColor1: #f1f1f1;
+  --greyColor2: #ececec;
+  --greyColor3: #535353;
+  --greyColor4: #f8f8f8;
+  --greenColor: #00ebc7;
+  --yellowColor: #fde24f;
+  --violetColor: #cfbaff;
+}
+.width {
+  max-width: 94.5rem;
+  margin: 0 auto;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body,
+html {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+.btn-type1 {
+  font-size: 1.3em;
+  font-weight: 500;
+  padding: 0.6rem 0.9rem;
+  border: none;
+  border-radius: 1.8rem;
+  cursor: pointer;
+  background: var(--darkColor);
+  color: var(--whiteColor);
+}
+/* =========================
+Start Style Navbar
+========================= */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 1.8rem 6.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    position: relative;
+    max-width: 75rem;
+  }
+
+  & nav {
+    & ul {
+      position: relative;
+      display: flex;
+
+      & li {
+        list-style: none;
+
+        & a {
+          display: inline-block;
+          color: var(--darkColor);
+          font-size: 1.3em;
+          font-weight: 500;
+          margin: 0.6rem 1.2rem;
+        }
+      }
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    justify-items: baseline;
+    gap: 0.6rem;
+    .btn-type1:nth-child(1) {
+      background: var(--greyColor1);
+      color: var(--darkColor);
+    }
+
+    & img {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+  }
+}
+/* =========================
+End Style Navbar
+========================= */
+
+/* =========================
+Start Style Find Section
+========================= */
+.hero-section {
+  width: 100%;
+  height: 47rem;
+  position: relative;
+  top: 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .find-bg {
+    position: absolute;
+    z-index: -105;
+    margin: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 47rem;
+  }
+
+  .find-section {
+    width: 80%;
+    height: 21.5rem;
+    padding: 3.1rem 5rem;
+    background: var(--whiteColor);
+    border-radius: 0.6rem;
+    border: 1px solid var(--darkColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & h1 {
+      font-size: 2.8em;
+      font-weight: 500;
+      margin: 0.5em 1em;
+    }
+
+    .find-item {
+      .item-1 {
+        display: flex;
+        flex-direction: row;
+
+        & div {
+          width: 12.5rem;
+          height: 3.1rem;
+          font-size: 1.3em;
+          font-weight: 500;
+          background-color: var(--greyColor2);
+          margin: 1.2rem 0.6rem;
+          padding: 0.6rem;
+          display: flex;
+          align-items: center;
+          justify-content: baseline;
+          justify-content: space-between;
+          border-radius: 0.6rem;
+
+          & img {
+            width: 1.7rem;
+            height: 1.7rem;
+          }
+        }
+      }
+    }
+
+    & .long-btn {
+      width: 40.6rem;
+      height: 3.1rem;
+      font-size: 1.4em;
+      font-weight: 500;
+      background: var(--greyColor2);
+      color: var(--darkColor);
+      border: none;
+      border-radius: 0.6rem;
+      margin: 0px 0.6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    & .btn-type1 {
+      width: 12.5rem;
+      background-color: var(--greenColor);
+      color: var(--darkColor);
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+
+  .bottom-btn {
+    position: relative;
+    top: 6.2rem;
+    background-color: transparent;
+    border: 2px solid var(--whiteColor);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: 2px solid underline;
+  }
+}
+/* =========================
+End Style Find section
+========================= */
+
+/* =========================
+Start Style Logo Section
+========================= */
+.logo-section {
+  width: 100%;
+  height: 23rem;
+  background-color: var(--yellowColor);
+  margin-top: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  border-top: 1px solid var(--darkColor);
+  border-bottom: 1px solid var(--darkColor);
+
+  & h3 {
+    font-size: 2.1em;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  & img {
+    max-width: 100%;
+  }
+}
+/* =========================
+End Style Logo Section
+========================= */
+
+/* =========================
+Start Style Features Section
+========================= */
+.features-section {
+  width: 100%;
+  height: 42.5rem;
+  padding: 1.2rem;
+  border-bottom: 1px solid var(--darkColor);
+  & h3 {
+    font-size: 2.1em;
+    font-weight: 500;
+    margin: 4.3rem 2.5rem;
+  }
+
+  .details {
+    .feat {
+      width: 74rem;
+      height: 17.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 3.1rem;
+      margin: 4.3rem auto;
+
+      & div {
+        text-align: center;
+        & img {
+          width: 5rem;
+          height: 5rem;
+          margin: 0.6rem;
+        }
+
+        & h4 {
+          font-size: 1.5rem;
+          font-weight: 500;
+          margin: 0.6rem;
+        }
+
+        & p {
+          color: var(--greyColor3);
+          font-size: 1.2em;
+          font-weight: 400;
+          margin: 1.2rem;
+        }
+
+        & a {
+          color: var(--darkColor);
+          text-decoration: 1px solid underline;
+          font-size: 1em;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  & button {
+    background-color: transparent;
+    color: var(--darkColor);
+    border: 2px solid var(--darkColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+/* =========================
+End Style Features Section
+========================= */
+
+/* =========================
+Start Style Buy Sell Section
+========================= */
+.buy-sell-section {
+  width: 100%;
+  height: 44rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.1rem;
+  background-color: var(--greyColor4);
+  border-bottom: 1px solid var(--darkColor);
+
+  .buy-section {
+    width: 49%;
+    height: 44rem;
+    margin: auto 3.1rem;
+
+    & h2 {
+      font-size: 2.1em;
+      font-weight: 500;
+      margin: 1.2rem 0;
+    }
+    .id-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      padding: 1.2rem 0;
+
+      & div {
+        width: 40rem;
+        height: 6.2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 1.2rem;
+        background-color: var(--whiteColor);
+        border: 1px solid var(--darkColor);
+        border-radius: 0.6rem;
+
+        & img {
+          width: 4.6rem;
+          height: 4.6rem;
+        }
+
+        & h3 {
+          font-size: 1.2em;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  & button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem auto;
+    border-radius: 1rem;
+    padding: 1.2rem 1.5rem;
+  }
+}
+/* =========================
+End Style Buy Sell Section
+========================= */
+
+/* =========================
+Start Style Get started Section
+========================= */
+.start-section {
+  width: 100%;
+  height: 37.5rem;
+  text-align: center;
+  background-color: var(--violetColor);
+
+  & h1 {
+    font-size: 4.6em;
+    font-weight: 500;
+    padding: 9.3rem 4.3rem;
+  }
+
+  & button {
+    font-size: 2em;
+    font-weight: 500;
+    padding: 1rem 2.8rem;
+    border-radius: 1.8rem;
+  }
+}
+/* =========================
+End Style Get started Section
+========================= */
+
+/* =========================
+Start Style Footer Section
+========================= */
+.footer-section {
+  width: 100%;
+  height: 37.5rem;
+  background-color: var(--darkColor);
+  color: var(--whiteColor);
+
+  .links {
+    height: 28.1rem;
+    padding: 6.2rem 6.2rem 3.1rem 6.2rem;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0px, 1fr));
+    align-items: center;
+    gap: 5rem;
+
+    & div {
+      height: 18.7rem;
+
+      & h3 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+      }
+      & a {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--whiteColor);
+        margin: 0.6rem;
+        display: block;
+        text-align: left;
+      }
+    }
+  }
+
+  .last-footer {
+    height: 9.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.1rem;
+    border-top: 1px solid var(--whiteColor);
+
+    & h6 {
+      font-size: 0.8em;
+      font-weight: 500;
+    }
+  }
+}
+/* =========================
+End Style Footer Section
+========================= */
+
+/* =========================
+Responsive For Tablet
+========================= */
+@media screen and (max-width: 1030px) {
+  .width {
+    max-width: 98%;
+    margin: 0 auto;
+  }
+  header {
+    width: 100%;
+    padding: 2rem;
+    .logo {
+      max-width: 60rem;
+    }
+    & nav {
+      & ul {
+        & li {
+          & a {
+            display: inline-block;
+            color: var(--darkColor);
+            font-size: 1.2em;
+            margin: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .hero-section {
+    width: 100%;
+    height: 40rem;
+    .find-bg {
+      height: 40rem;
+    }
+    .find-section {
+      width: 80%;
+      height: 22rem;
+      padding: 2rem 3rem;
+      & h1 {
+        font-size: 2.8em;
+      }
+      .find-item {
+        .item-1 {
+          & div {
+            width: 10rem;
+            height: 3rem;
+            margin: 2rem 0.6rem;
+            padding: 0.5rem;
+            & img {
+              width: 1.7rem;
+              height: 1.7rem;
+            }
+          }
+        }
+      }
+      & .long-btn {
+        width: 32.3rem;
+        height: 3rem;
+        margin-bottom: 2rem;
+      }
+      & .btn-type1 {
+        width: 10rem;
+      }
+    }
+    .bottom-btn {
+      top: 4rem;
+    }
+  }
+
+  .logo-section {
+    width: 100%;
+    height: 20rem;
+    margin-top: 6rem;
+    gap: 2rem;
+    & h3 {
+      font-size: 2.5em;
+    }
+    & img {
+      max-width: 100%;
+    }
+  }
+
+  .features-section {
+    width: 100%;
+    height: 38rem;
+    padding: 1rem;
+    & h3 {
+      font-size: 2.5em;
+      margin: 2rem 2.5rem;
+    }
+    .details {
+      .feat {
+        width: 55rem;
+        height: 17.5rem;
+        align-items: baseline;
+        gap: 3rem;
+        margin: 4rem auto;
+        & div {
+          & h4 {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+    & button {
+      margin: 1rem auto;
+    }
+  }
+
+  .buy-sell-section {
+    width: 100%;
+    height: 38rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--greyColor4);
+    border-bottom: 1px solid var(--darkColor);
+
+    .buy-section {
+      height: 40rem;
+      & h2 {
+        font-size: 2.5em;
+        margin: 1rem 0;
+      }
+      .id-section {
+        gap: 1rem;
+        padding: 1rem 0;
+        & div {
+          width: 100%;
+          height: 6rem;
+          padding: 0 1rem;
+          & img {
+            width: 4rem;
+            height: 4rem;
+          }
+          & h3 {
+            font-size: 0.8em;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    & button {
+      margin: 2rem auto;
+    }
+  }
+
+  .start-section {
+    width: 100%;
+    height: 35rem;
+    & h1 {
+      font-size: 4em;
+      padding: 5.5rem 4rem;
+    }
+  }
+
+  .footer-section {
+    width: 100%;
+    height: 35rem;
+    .links {
+      height: 27rem;
+      padding: 3rem;
+      gap: 3rem;
+      & div {
+        height: 100%;
+      }
+    }
+    .last-footer {
+      width: 100%;
+      height: 8rem;
+      padding: 3rem;
+      & h6 {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+/* =========================
+Responsive For Mobile
+========================= */
+@media screen and (max-width: 420px) {
+  .width {
+    max-width: 99%;
+    margin: 0 auto;
+  }
+  .btn-type1 {
+    font-size: 1em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+  }
+
+  header {
+    width: 100%;
+    padding: 2rem 1rem;
+    gap: 0.5rem;
+    justify-content: space-between;
+    .logo {
+      width: 9rem;
+    }
+    & nav {
+      display: none;
+    }
+    .nav-right {
+      gap: 0.3rem;
+      & img {
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+    }
+  }
+
+  .hero-section {
+    width: 100%;
+    height: 30rem;
+    top: 5rem;
+    .find-bg {
+      object-fit: cover;
+      height: 30rem;
+    }
+    .find-section {
+      width: 90%;
+      height: 15rem;
+      padding: 1.1rem 2rem;
+      & h1 {
+        font-size: 1.5em;
+        margin: 0.5em 1em;
+      }
+      .find-item {
+        .item-1 {
+          & div {
+            width: 5rem;
+            height: 2.1rem;
+            font-size: 0.8em;
+            margin: 1rem 0.2rem;
+            padding: 0.5rem;
+            & img {
+              width: 1rem;
+              height: 1rem;
+            }
+          }
+        }
+      }
+      & .long-btn {
+        width: 15rem;
+        height: 2.1rem;
+        font-size: 0.8em;
+        margin: 0px 0.5rem;
+        margin-bottom: 0rem;
+      }
+      & .btn-type1 {
+        width: 5rem;
+        height: 2.1rem;
+        font-size: 0.8rem;
+      }
+    }
+    .bottom-btn {
+      top: 3rem;
+      font-size: 1rem;
+    }
+  }
+
+  .logo-section {
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+    gap: 1rem;
+    & h3 {
+      font-size: 1.5em;
+    }
+  }
+
+  .features-section {
+    width: 100%;
+    height: 50rem;
+    padding: 1rem;
+    & h3 {
+      font-size: 1.5em;
+      margin: 2rem 0rem;
+    }
+    .details {
+      .feat {
+        width: 100%;
+        height: 10rem;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem auto;
+        position: relative;
+        top: 13rem;
+        & div {
+          text-align: center;
+          & img {
+            width: 3rem;
+            height: 3rem;
+            margin: 0.3rem;
+          }
+          & h4 {
+            font-size: 1.5rem;
+            margin: 0.3rem;
+          }
+          & p {
+            font-size: 1em;
+            margin: 1rem;
+          }
+          & a {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+    & button {
+      position: relative;
+      top: 28rem;
+    }
+  }
+
+  .buy-sell-section {
+    width: 100%;
+    height: 52rem;
+    flex-direction: column;
+    padding: 1rem;
+    .buy-section {
+      width: 100%;
+      height: 40rem;
+      margin: auto 0;
+      & h2 {
+        font-size: 2em;
+        margin: 1rem 0;
+      }
+      .id-section {
+        gap: 1rem;
+        padding: 1rem 0;
+        & div {
+          width: 100%;
+          height: 4rem;
+          padding: 0 1rem;
+          & img {
+            width: 3rem;
+            height: 3rem;
+          }
+          & h3 {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+    & button {
+      margin: 1rem auto;
+      padding: 1rem 1.2rem;
+    }
+    .buy-section:nth-child(2) {
+      border-bottom: none;
+    }
+  }
+
+  .start-section {
+    width: 100%;
+    height: 17rem;
+    text-align: center;
+    & h1 {
+      font-size: 2em;
+      padding: 2rem 1rem;
+    }
+    & button {
+      font-size: 1.5em;
+      border-radius: 1.5rem;
+    }
+  }
+
+  .footer-section {
+    width: 100%;
+    height: 20rem;
+    .links {
+      height: 13rem;
+      padding: 1rem;
+      gap: 1rem;
+      grid-template-columns: repeat(4, minmax(0px, 1fr));
+      & div {
+        height: 15rem;
+        & img {
+          width: 5rem;
+          height: auto;
+        }
+        & h3 {
+          font-size: 1rem;
+          margin-bottom: 0;
+        }
+        & a {
+          font-size: 0.7rem;
+          font-weight: 400;
+          margin: 0.3rem;
+        }
+      }
+    }
+    .last-footer {
+      width: 100%;
+      height: 7rem;
+      padding: 1rem;
+      & h6 {
+        font-size: 0.5em;
+      }
+    }
+  }
+}
